@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: action/checkout@v2
+      uses: actions/checkout@v2
 #test
     - name: Make Changes
       run: |
