@@ -1,23 +1,20 @@
-name: Example TestWorkflow
-
-
+name: Test Workflow
+ 
 on:
   push:
     branches:
-      - main
-
+        - main
+ 
 jobs:
   example-job:
     runs-on: ubuntu-latest
-
-
+ 
     steps:
-    - name: Checkout repository
-      uses: action/checkout@v2
-    - name: Use Github API with PAT
+    - name: checkout repository
+      uses: actions/checkout@v2
+ 
+    - name: use GitHub API with PAT
       env:
-        GITHUB_TOKEN: ${{secrets.GH_PAT}}
+        GITHUB_TOKEN: ${{  secrets.GH_PAT  }}
       run: |
-       curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
-      
-  
+        curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
