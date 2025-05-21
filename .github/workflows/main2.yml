@@ -13,7 +13,7 @@ jobs:
         git config --global user.name "harishj98"
 
         echo "New changes" >> changes.txt
-        git add chnages.txt
+        git add changes.txt
         git commit -m "Add changes"
 
     - name: Push changes
