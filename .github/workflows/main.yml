@@ -18,6 +18,7 @@ jobs:
     steps:
      - uses: actions/setup-node@v3.9.1
      - name: Setup Node.js environment
+       run: echo ${{inputs.environment}}
        
 
 
